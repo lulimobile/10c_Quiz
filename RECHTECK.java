@@ -27,9 +27,9 @@
     {
         x = 1;
         y = 1;
-        breite = 1;
-        höhe = 1;
-        farbe =" schwarz";
+        breite = 2000;
+        höhe = 2000;
+        farbe ="schwarz";
         sichtbar = true;
         symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
         ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
