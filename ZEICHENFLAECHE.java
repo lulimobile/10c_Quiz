@@ -15,7 +15,7 @@ public class ZEICHENFLAECHE
     Button C;
     Button D;
     Label fragetext;
-    FRAGEPOOL;
+    FRAGEPOOL fragepool;
     
     /**
      * Constructor for objects of class OBERFLAECHE
