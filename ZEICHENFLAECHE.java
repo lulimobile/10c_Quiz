@@ -14,7 +14,8 @@ public class ZEICHENFLAECHE
     Button B;
     Button C;
     Button D;
-    TextField eingabe;
+    Label fragetext;
+    FRAGEPOOL;
     
     /**
      * Constructor for objects of class OBERFLAECHE
@@ -27,9 +28,16 @@ public class ZEICHENFLAECHE
         fenster.setLocation(0,0);
         fenster.setVisible(true);
         fenster.setLayout(null);
+              fragetext = new Label();
+       
+        fragetext.setVisible(true);
+        fragetext.setLocation(200,50);
+        fragetext.setSize(400,50);
+        fenster.add(fragetext);
+        
         A = new Button();
         A.setLocation(20,35);
-        A.setLabel("Tel Aviv");
+       
         A.setVisible(true);
         A.setSize(100,30);
         A.setEnabled(true);
@@ -37,14 +45,15 @@ public class ZEICHENFLAECHE
     {
             public void actionPerformed(ActionEvent e)
             {
-                fragenpool.Weiterschalten();
+                fragepool.Weiterschalten();
+                
             }
         });
         fenster.add(C);
         
         C = new Button();
         C.setLocation(20,150);
-        C.setLabel("Ramallah");
+       
         C.setVisible(true);
         C.setSize(100,30);
         C.setEnabled(true);
@@ -52,14 +61,14 @@ public class ZEICHENFLAECHE
         {
             public void actionPerformed(ActionEvent e)
             {
-                fragenpool.Anhalten();
+                fragepool.Anhalten();
             }
         });
         fenster.add(B);
         
         B = new Button();
         B.setLocation(70,35);
-        B.setLabel("Jerusalem");
+        
         B.setVisible(true);
         B.setSize(100,30);
         B.setEnabled(true);
@@ -67,13 +76,13 @@ public class ZEICHENFLAECHE
         {
             public void actionPerformed(ActionEvent e)
             {
-                fragenpool.Weiterschalten();
+                fragepool.Weiterschalten();
             }
         });
         fenster.add(D);
             D = new Button();
         D.setLocation(70,35);
-        D.setLabel("Jerusalem");
+        
         D.setVisible(true);
         D.setSize(100,30);
         D.setEnabled(true);
@@ -81,16 +90,11 @@ public class ZEICHENFLAECHE
         {
             public void actionPerformed(ActionEvent e)
             {
-                fragenpool.Weiterschalten();
+                fragepool.Weiterschalten();
             }
         });
         
-        eingabe = new TextField();
-        eingabe.setLocation(70,150);
-        eingabe.setVisible(true);
-        eingabe.setSize(100,30);
-        eingabe.setEnabled(true);
-        fenster.add(eingabe);
+
         
         fenster.addWindowListener(new WindowAdapter()
         {
