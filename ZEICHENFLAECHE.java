@@ -1,100 +1,51 @@
 
 import java.awt.*;
-import java.awt.geom.*;
 import java.awt.event.*;
-import javax.swing.*;
-import java.util.*;
 
-
- 
-public class ZEICHENFLAECHE
+class ZEICHENFLAECHE
 {
     Frame fenster;
-    Button A;
-    Button B;
-    Button C;
-    Button D;
     Label fragetext;
-    FRAGEPOOL fragepool;
-    
+    Button antwortA;
+    Button antwortB;
+    Button antwortC;
+    Button antwortD;
+
     /**
      * Constructor for objects of class OBERFLAECHE
      */
     public ZEICHENFLAECHE()
     {
-        
-        fenster = new Frame("Schaltkasten");
-        fenster.setSize(400,600);
-        fenster.setLocation(0,0);
+        fenster = new Frame("ZEICHENFLAECHE");
+        fenster.setSize(600,400);
+        fenster.setLocation(0,30);
         fenster.setVisible(true);
         fenster.setLayout(null);
-              fragetext = new Label();
-       
+        
+        fragetext = new Label();
+        fragetext.setText("Was ist die Hauptstadt von Indien");
         fragetext.setVisible(true);
-        fragetext.setLocation(200,50);
-        fragetext.setSize(400,50);
+        fragetext.setLocation(160,50);
+        fragetext.setSize(200,150);
         fenster.add(fragetext);
         
-        A = new Button();
-        A.setLocation(20,35);
+        antwortA = new Button();
+        antwortA.setLocation(80,250);
+        antwortA.setLabel("Berlin");
+        antwortA.setVisible(true);
+        antwortA.setSize(80,30);
+        antwortA.setEnabled(true);
+        antwortA.addActionListener(new ActionListener()
+        
        
-        A.setVisible(true);
-        A.setSize(100,30);
-        A.setEnabled(true);
-        A.addActionListener(new ActionListener()
-    {
-            public void actionPerformed(ActionEvent e)
-            {
-                fragepool.Weiterschalten();
-                
-            }
-        });
-        fenster.add(C);
         
-        C = new Button();
-        C.setLocation(20,150);
-       
-        C.setVisible(true);
-        C.setSize(100,30);
-        C.setEnabled(true);
-        C.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
             {
-                fragepool.Anhalten();
+                //Hier wird Frage A ausgewählt
             }
         });
-        fenster.add(B);
-        
-        B = new Button();
-        B.setLocation(70,35);
-        
-        B.setVisible(true);
-        B.setSize(100,30);
-        B.setEnabled(true);
-        B.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
-                fragepool.Weiterschalten();
-            }
-        });
-        fenster.add(D);
-            D = new Button();
-        D.setLocation(70,35);
-        
-        D.setVisible(true);
-        D.setSize(100,30);
-        D.setEnabled(true);
-        D.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
-                fragepool.Weiterschalten();
-            }
-        });
-        
-
+        fenster.add(antwortA);
         
         fenster.addWindowListener(new WindowAdapter()
         {
@@ -103,5 +54,84 @@ public class ZEICHENFLAECHE
                 System.exit(1);
             }
         });
-    }
+         antwortB = new Button();
+          antwortB.setLocation(400,250);
+        antwortB.setLabel("Neu Delhi");
+        antwortB.setVisible(true);
+        antwortB.setSize(100,30);
+        antwortB.setEnabled(true);
+        antwortB.addActionListener(new ActionListener()
+        
+       
+        
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                //Hier wird Frage A ausgewählt
+            }
+        });
+        fenster.add(antwortB);
+        
+        fenster.addWindowListener(new WindowAdapter()
+        {
+            public void windowClosing(WindowEvent e)
+            {
+                System.exit(1);
+            }
+    });
+    
+
+ antwortC = new Button();
+          antwortC.setLocation(80,150);
+        antwortC.setLabel("Ankara");
+        antwortC.setVisible(true);
+        antwortC.setSize(100,30);
+        antwortC.setEnabled(true);
+        antwortC.addActionListener(new ActionListener()
+        
+       
+        
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                //Hier wird Frage A ausgewählt
+            }
+        });
+        fenster.add(antwortC);
+        
+        fenster.addWindowListener(new WindowAdapter()
+        {
+            public void windowClosing(WindowEvent e)
+            {
+                System.exit(1);
+            }
+    });
+     antwortD = new Button();
+          antwortD.setLocation(400,150);
+        antwortD.setLabel("Mumbai");
+        antwortD.setVisible(true);
+        antwortD.setSize(100,30);
+        antwortD.setEnabled(true);
+        antwortD.addActionListener(new ActionListener()
+        
+       
+        
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                //Hier wird Frage A ausgewählt
+            }
+        });
+        fenster.add(antwortD);
+        
+        fenster.addWindowListener(new WindowAdapter()
+        {
+            public void windowClosing(WindowEvent e)
+            {
+                System.exit(1);
+            }
+    });
+    
 }
+}
+
