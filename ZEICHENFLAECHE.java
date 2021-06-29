@@ -9,8 +9,10 @@ class ZEICHENFLAECHE
     Button antwortA;
     Button antwortB;
     Button antwortC;
-    Button antwortD;
-
+    String antwort1;
+    String antwort2;
+    String antwort3;
+    String fragetext1;
     /**
      * Constructor for objects of class OBERFLAECHE
      */
@@ -23,7 +25,7 @@ class ZEICHENFLAECHE
         fenster.setLayout(null);
         
         fragetext = new Label();
-        fragetext.setText("Was ist die Hauptstadt von Indien");
+        fragetext.setText(fragetext1);
         fragetext.setVisible(true);
         fragetext.setLocation(160,50);
         fragetext.setSize(200,150);
@@ -31,7 +33,7 @@ class ZEICHENFLAECHE
         
         antwortA = new Button();
         antwortA.setLocation(80,250);
-        antwortA.setLabel("Berlin");
+        antwortA.setLabel(antwort1);
         antwortA.setVisible(true);
         antwortA.setSize(80,30);
         antwortA.setEnabled(true);
@@ -55,8 +57,8 @@ class ZEICHENFLAECHE
             }
         });
          antwortB = new Button();
-          antwortB.setLocation(400,250);
-        antwortB.setLabel("Neu Delhi");
+        antwortB.setLocation(400,250);
+        antwortB.setLabel(antwort2);
         antwortB.setVisible(true);
         antwortB.setSize(100,30);
         antwortB.setEnabled(true);
@@ -81,9 +83,9 @@ class ZEICHENFLAECHE
     });
     
 
- antwortC = new Button();
-          antwortC.setLocation(80,150);
-        antwortC.setLabel("Ankara");
+        antwortC = new Button();
+        antwortC.setLocation(80,150);
+        antwortC.setLabel(antwort3);
         antwortC.setVisible(true);
         antwortC.setSize(100,30);
         antwortC.setEnabled(true);
@@ -106,23 +108,10 @@ class ZEICHENFLAECHE
                 System.exit(1);
             }
     });
-     antwortD = new Button();
-          antwortD.setLocation(400,150);
-        antwortD.setLabel("Mumbai");
-        antwortD.setVisible(true);
-        antwortD.setSize(100,30);
-        antwortD.setEnabled(true);
-        antwortD.addActionListener(new ActionListener()
+ 
         
        
-        
-        {
-            public void actionPerformed(ActionEvent e)
-            {
-                //Hier wird Frage A ausgewählt
-            }
-        });
-        fenster.add(antwortD);
+       
         
         fenster.addWindowListener(new WindowAdapter()
         {
