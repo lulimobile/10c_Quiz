@@ -26,58 +26,58 @@ public class Spiel
 		
 		frage1 = new FRAGE
 		String[] frage1 = {
-				"fragetext = Wieviel ist 1 + 1?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Was ist eine Gewichtsklasse beim Boxen?",
+				"antwort1 = Halbschergewicht",
+				"antwort2 = Achtelleichtgewicht",
+				"antwort3 = Viertelstrohgewicht",
 				
 		};
                 frage2 = new FRAGE
 		String[] frage2 = {
-				"fragetext = Wieviel ist 1 + 2?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Welches ist das seltenste Metall?",
+				"antwort1 = Platin",
+				"antwort2 = Indium",
+				"antwort3 = Promethium",
 				
 		};
 		frage3 = new FRAGE
 		String[] frage3 = {
-				"fragetext = Wieviel ist 2 - 1?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Womit bezahlt man in Venezuela?",
+				"antwort1 = Nuevo Sol",
+				"antwort2 = Bolivar",
+				"antwort3 = Cordoba",
 				
 		};
 		frage4 = new FRAGE
 		String[] frage4 = {
-				"fragetext = Wieviel ist 2 - 1?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Wer war der britische Premierminister 2015?",
+				"antwort1 = Gordon Brown",
+				"antwort2 = David Cameron",
+				"antwort3 = John Craydon",
 				
 		};
 		frage5 = new FRAGE
 		String[] frage5 = {
-				"fragetext = Wieviel ist 2 - 1?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Welcher der Jünger Jesu wird als der Ungläubige bezeichnet?",
+				"antwort1 = Petrus",
+				"antwort2 = Thomas",
+				"antwort3 = Markus",
 				
 		};
 		frage6 = new FRAGE
 		String[] frage6 = {
-				"fragetext = Wieviel ist 2 - 1?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Wofür ist Vertigo der medizinische Fachausdruck?",
+				"antwort1 = Taubheit",
+				"antwort2 = Brechreiz",
+				"antwort3 = Schwindel",
 				
 		};
 		frage7 = new FRAGE
 		String[] frage7 = {
-				"fragetext = Wieviel ist 2 - 1?",
-				"antwort1 = Eins",
-				"antwort2 = Zwei",
-				"antwort3 = Drei",
+				"fragetext = Wie heißt der E-Mail-Computervirus, der weltweit Millionen von Computern lahmlegte?",
+				"antwort1 = I love you",
+				"antwort2 = I want you",
+				"antwort3 = Strictly confidental",
 				
 		};
 		frage8 = new FRAGE
